@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WEBSITE KHAIRY</title>
+  <link rel="stylesheet"
+    href="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\style.css">
+</head>
+
+<body class="page-enter">
+
+  <!-- header: logo kiri, menu button kanan -->
+  <header class="header header-hero"
+    background="c:\Users\Hype AMD\OneDrive\Gambar\Screenshots\Screenshot 2025-11-16 155704.png">
+    <a class="logo" href="index.html" aria-label="Home">
+      <span class="logo-circle">K</span>
+    </a>
+    <a class="menu-link" href="menu.html" aria-label="Menu">MENU</a>
+    <div class="menu-hint">▲<br>Click here</div>
+  </header>
+
+  <!-- hero -->
+  <main class="hero-wrap">
+    <div class="top-background"
+      background="c:\Users\Hype AMD\OneDrive\Gambar\Screenshots\Screenshot 2025-11-16 155704.png"></div>
+    <!-- huge background text -->
+    <div class="hero-bg-text">MAN INSAN<br>CENDEKIA </div>
+    <div class="scroll-fixed">
+      SCROLL DOWN<br> ▼
+    </div>
+
+    <!-- center sticker-like text -->
+    <div class="hero-sticker animate-pop">
+      Khairy Gans
+    </div>
+  </main>
+
+  <!-- sections (below hero) -->
+  <section class="deco-section">
+
+    <div class="deco-item left">
+      <img src="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\img\REMOVE PASKIB.png" alt="">
+    </div>
+
+    <div class="deco-item right">
+      <img src="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\img\REMOVE ADAT.png" alt="">
+    </div>
+
+    <div class="deco-item left" id="stopImage">
+      <img src="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\img\REMOVE BOXING.png" alt="">
+    </div>
+
+  </section>
+
+<div id="stopArea" aria-hidden="true"></div>
+
+
+  <!-- ========== FOOTER ========== -->
+<footer class="footer-loon">
+
+    <div class="footer-top">
+
+        <!-- LOGO + TITLE -->
+        <div class="footer-col">
+            <div class="footer-logo">
+                <div class="logo-circle">K</div>
+                <h2 class="footer-brand" align="center">MAN INSAN CENDEKIA GOWA</h2>
+            </div>
+        </div>
+
+        <!-- OFFICE -->
+        <div class="footer-col">
+            <h3 class="footer-title">LOCATION</h3>
+
+            <p class="footer-sub">SENIOR HIGH SCHOOL</p>
+            <p>Jl. Pendidikan, Desa Belapunranga, Kecamatan Parangloe, Gowa, Sulawesi Selatan</p>
+
+            <p class="footer-sub">JUNIOR HIGH SCHOOL</p>
+            <p> JL. AP. PETTARANI NO.1A, Mannuruki, Kec. Tamalate, Kota Makassar, Sulawesi Selatan</p>
+
+            <p class="footer-sub">ELEMENTARY SCHOOL</p>
+            <p>Jl Ahmad Yani 19 A, Baru, Kec. Ujung Pandang, Kota Makassar, Sulawesi Selatan</p>
+        </div>
+
+        <!-- MENU -->
+        <div class="footer-col">
+            <h3 class="footer-title">MENU</h3>
+            <a href="about.html">ABOUT</a>
+            <a href="education.html">EDUCATION</a>
+            <a href="project.html">PROJECT</a>
+            <a href="gallery.html">GALLERY</a>
+            <a href="contact.html">KONTAK</a>
+        </div>
+
+        <div class="footer-col">
+    <h3 class="footer-title">CONTACT ME</h3>
+
+    <!-- WHATSAPP -->
+    <a href="https://wa.me/62882022189114" target="_blank" class="footer-contact-row">
+        <img src="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\img\download-removebg-preview.png" class="footer-icon">
+        <div>
+            <p class="footer-sub">WHATSAPP</p>
+            <p>+62 882-0221-89114</p>
+        </div>
+    </a>
+
+    <!-- INSTAGRAM -->
+    <a href="https://instagram.com/zauuky" target="_blank" class="footer-contact-row">
+        <img src="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\img\ins-removebg-preview.png" class="footer-icon">
+        <div>
+            <p class="footer-sub">INSTAGRAM</p>
+            <p>@zauuky</p>
+        </div>
+    </a>
+
+    <!-- TIKTOK -->
+    <a href="https://tiktok.com/@just.jeky" target="_blank" class="footer-contact-row">
+        <img src="c:\Users\Hype AMD\Downloads\TUGAS & MODUL\INFORMATIKA\PROYEK HTML & CSS\img\tik_tok_logo_png-removebg-preview.png" class="footer-icon">
+        <div>
+            <p class="footer-sub">TIKTOK</p>
+            <p>@just.jeky</p>
+        </div>
+    </a>
+</div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>2025 © MAN INSAN CENDEKIA. All Rights Reserved.</p>
+    </div>
+
+</footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+<script>
+document.addEventListener("scroll", () => {
+  const stopImg = document.getElementById("stopImage");
+  const heroText = document.querySelector(".hero-bg-text");
+  const sticker = document.querySelector(".hero-sticker");
+
+  const rect = stopImg.getBoundingClientRect();
+
+  // offset tambahan 50px ke bawah
+  const EXTRA = 50;
+
+  if (rect.top <= 200) {
+
+    heroText.style.position = "absolute";
+    heroText.style.top = (window.scrollY + rect.top - 150 + EXTRA) + "px";
+
+    sticker.style.position = "absolute";
+    sticker.style.top = (window.scrollY + rect.top - 40 + EXTRA) + "px";
+
+  } else {
+
+    heroText.style.position = "fixed";
+    heroText.style.top = "90px";
+
+    sticker.style.position = "fixed";
+    sticker.style.top = "220px";
+  }
+});
+</script>
+
+
+
+</body>
+
+</html>
