@@ -2,30 +2,82 @@
 <html lang="id">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Contact — Khairy</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="page page-contact">
+
+  <!-- HEADER -->
   <header class="site-header small-header">
     <a class="logo" href="index.html"><span class="logo-circle">K</span></a>
     <a class="menu-link small" href="menu.html">MENU</a>
   </header>
 
-  <main class="section-wrap container animate-fade">
-    <h1 class="section-heading" align="center">KONTAK</h1>
+   <main class="section-wrap container animate-fade">
 
-    <form class="contact-card" action="#" method="post">
-      <input name="name" placeholder="Nama" required>
-      <input name="email" type="email" placeholder="Email" required>
-      <textarea name="message" rows="6" placeholder="Pesan..." required></textarea>
-      <button class="btn-send" type="submit">Kirim</button>
-    </form>
+    <h1 class="section-heading" align="center">CONTACT</h1>
+
+    <div class="contact-wrapper">
+
+      <!-- ========== CONTACT INFO LEFT ========== -->
+      <div class="contact-info">
+
+        <h2 class="contact-title">Contact Information</h2>
+
+        <div class="contact-row">
+          <img src="img/download-removebg-preview.png" class="contact-icon">
+          <div>
+            <p class="contact-sub">WHATSAPP</p>
+            <a href="https://wa.me/62882022189114" class="contact-link" target="_blank">
+              +62 882-0221-89114
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <img src="img/ins-removebg-preview.png" class="contact-icon">
+          <div>
+            <p class="contact-sub">INSTAGRAM</p>
+            <a href="https://instagram.com/zauuky" class="contact-link" target="_blank">
+              @zauuky
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-row">
+          <img src="img/tik_tok_logo_png-removebg-preview.png" class="contact-icon">
+          <div>
+            <p class="contact-sub">TIKTOK</p>
+            <a href="https://www.tiktok.com/@just.jeky" class="contact-link" target="_blank">
+              @just.jeky
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ========== CONTACT FORM RIGHT ========== -->
+      <form class="contact-form">
+        <h2 class="contact-title">Send Me A Message</h2>
+
+        <input type="text" placeholder="Nama Lengkap" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Pesan..." required></textarea>
+
+        <button type="submit" class="contact-btn">KIRIM PESAN</button>
+      </form>
+
+    </div>
+
   </main>
+
 </body>
 
 </html>
