@@ -350,96 +350,96 @@ body {
 /* ========== CONTACT LOONART STYLE ========== */
 
 .contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-  margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    margin-top: 40px;
 }
 
 .contact-info,
 .contact-form {
-  background: white;
-  padding: 30px 32px;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-  border: 6px solid black;
+    background: white;
+    padding: 30px 32px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    border: 6px solid black;
 }
 
 .contact-title {
-  font-size: 26px;
-  font-weight: 900;
-  margin-bottom: 20px;
+    font-size: 26px;
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .contact-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
 }
 
 .contact-icon {
-  width: 50px;
-  margin-right: 14px;
+    width: 50px;
+    margin-right: 14px;
 }
 
 .contact-sub {
-  font-weight: 900;
-  margin: 0;
+    font-weight: 900;
+    margin: 0;
 }
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
-  padding: 16px;
-  border-radius: 12px;
-  border: 3px solid black;
-  margin-bottom: 18px;
-  font-size: 15px;
-  font-weight: 600;
-  outline: none;
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    border: 3px solid black;
+    margin-bottom: 18px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
 }
 
 .contact-form textarea {
-  min-height: 140px;
-  resize: vertical;
+    min-height: 140px;
+    resize: vertical;
 }
 
 .contact-btn {
-  background: white;
-  padding: 14px 30px;
-  font-size: 18px;
-  font-weight: 900;
-  border: 4px solid black;
-  border-radius: 14px;
-  cursor: pointer;
-  box-shadow: 8px 8px 0 black;
-  transition: 0.2s;
+    background: white;
+    padding: 14px 30px;
+    font-size: 18px;
+    font-weight: 900;
+    border: 4px solid black;
+    border-radius: 14px;
+    cursor: pointer;
+    box-shadow: 8px 8px 0 black;
+    transition: 0.2s;
 }
 
 .contact-btn:hover {
-  transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0 black;
+    transform: translate(-4px, -4px);
+    box-shadow: 12px 12px 0 black;
 }
 
 .contact-link {
-  font-weight: 700;
-  color: black;
-  text-decoration: none;
-  transition: .2s;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    transition: .2s;
 }
 
 .contact-link:hover {
-  color: #555;
-  text-decoration: underline;
+    color: #555;
+    text-decoration: underline;
 }
 
 
 /* Responsive */
 @media (max-width: 900px) {
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }
 
 
@@ -1342,50 +1342,56 @@ body {
 /* ========== GALLERY POPUP / LIGHTBOX ========== */
 
 .modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
-  padding-top: 60px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.85);
-  animation: fadeModal .3s ease;
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    animation: fadeModal .3s ease;
 }
 
 @keyframes fadeModal {
-  from { opacity: 0; }
-  to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .modal-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-  max-height: 80vh;
-  border-radius: 12px;
-  box-shadow: 0 0 25px rgba(255,255,255,0.3);
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80vh;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
 .close-modal {
-  position: absolute;
-  top: 20px;
-  right: 40px;
-  color: white;
-  font-size: 45px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.2s;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
 .close-modal:hover {
-  color: #ddd;
-  transform: scale(1.1);
+    color: #ddd;
+    transform: scale(1.1);
 }
 
 /* Hapus dekorasi hanya di HP */
 @media (max-width: 720px) {
+
     .menu-deco-left,
     .menu-deco-right {
         display: none !important;
